@@ -13,6 +13,10 @@ body {
     color: #393939;
 }
 
+header {
+  background-color: #FAF6F4;
+}
+
 h1, h2, h3 {
   line-height: 1.2
 }
