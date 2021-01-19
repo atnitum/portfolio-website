@@ -4,9 +4,7 @@ Primary Colour Colour (Yellow):#EDC97B;
 Secondary Colour (Gray):#939393;
 Tertiary Colour (Dark Gray):#939393;
 */
-
 /* Layout Styling */
-
 * {
   box-sizing: border-box;
 }
@@ -16,23 +14,32 @@ Tertiary Colour (Dark Gray):#939393;
 }
 
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px; /* Sets the font size to 16px */
-    font-weight: 300; /* Sets the font weight to 300 */
-    line-height: 1.2; /* Sets the line-height to 1.2  * the font-size */
-    color: #393939;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.2;
+  /* Sets the line-height to 1.2  * the font-size */
+  color: #393939;
 }
 
 header {
   background-color: #FAF6F4;
+  text-align: center;
   padding: 10px;
   margin: 10px
 }
 
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
 
 #hero h1 {
   text-align: center;
@@ -41,6 +48,7 @@ header {
 h1, h2, h3 {
   line-height: 1.2
 }
+
 h1 {
   font-size: 2.50em;
   font-weight: 700
@@ -52,13 +60,11 @@ h2 {
 }
 
 h3 {
-  font-size: 1.50em
-  font-weight: 400;
+  font-size: 1.50em font-weight: 400;
 }
 
 h4 {
-  font-size: 1em
-  font-weight: 400;
+  font-size: 1em font-weight: 400;
 }
 
 img {
@@ -67,21 +73,29 @@ img {
 
 a {
   colour: #939393;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
+  /* No underlining */
 }
 
-a:visited { /* visted link */
+a:visited {
+  /* visted link */
   color: #5A5A5A
 }
 
 a:hover,
 a:focus {
   color: #EDC97B;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
 }
 
-a:active { /* selected link *//
-  color: #FFE3A5
+a:active {
+  /* selected link */
+  / color: #FFE3A5
+}
+
+.logo {
+  max-width: 250px;
 }
 
 .button {
@@ -91,7 +105,8 @@ a:active { /* selected link *//
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #D6D2D1; /* width of the border, type, color */
+  border-bottom: 2px solid #D6D2D1;
+  /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
@@ -112,6 +127,5 @@ a:active { /* selected link *//
 }
 
 .button.contact {
-  background-color: #EDC97B
-  color: #ffffff
+  background-color: #EDC97B color: #ffffff
 }
