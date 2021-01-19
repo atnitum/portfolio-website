@@ -15,6 +15,10 @@ Tertiary Colour (Dark Gray):#939393;
   padding: 0 15px;
 }
 
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px; /* Sets the font size to 16px */
@@ -27,6 +31,11 @@ header {
   background-color: #FAF6F4;
   padding: 10px;
   margin: 10px
+}
+
+
+#hero h1 {
+  text-align: center;
 }
 
 h1, h2, h3 {
