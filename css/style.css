@@ -5,8 +5,14 @@ Secondary Colour (Gray):#939393;
 Tertiary Colour (Dark Gray):#939393;
 */
 
+/* Layout Styling */
+
 * {
   box-sizing: border-box;
+}
+
+.container {
+  padding: 0 15px;
 }
 
 body {
@@ -21,12 +27,6 @@ header {
   background-color: #FAF6F4;
   padding: 10px;
   margin: 10px
-}
-
-.icon {
-  display: inline-block;
-  width: 20px
-  height: 20px
 }
 
 h1, h2, h3 {
