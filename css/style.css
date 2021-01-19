@@ -37,11 +37,22 @@ header {
 }
 
 nav > ul {
+  padding: 0 15px;
   list-style-type: none;
-  padding: 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#hero {
+  background-color: #FAF6F4;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
 }
 
 #hero h1 {
+  margin: 0;
+  padding: 0.67em
   text-align: center;
 }
 
