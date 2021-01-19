@@ -20,6 +20,11 @@ header {
   border-bottom: 3px solid #EDC97B;
 }
 
+icon {
+  display: inline-block;
+  width: 3em;
+}
+
 h1, h2, h3 {
   line-height: 1.2
 }
