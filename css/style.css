@@ -5,6 +5,10 @@ Secondary Colour (Gray):#939393;
 Tertiary Colour (Dark Gray):#939393;
 */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px; /* Sets the font size to 16px */
@@ -19,9 +23,10 @@ header {
   margin: 10px
 }
 
-icon {
+.icon {
   display: inline-block;
-  width: 3.5em;
+  width: 20px
+  height: 20px
 }
 
 h1, h2, h3 {
