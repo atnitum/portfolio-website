@@ -76,6 +76,11 @@ img {
   width: 100%;
 }
 
+.block {
+  float: left;
+  width: 50% 
+}
+
 a {
   colour: #939393;
   text-decoration: none;
