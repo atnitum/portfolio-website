@@ -13,6 +13,12 @@ Tertiary Colour (Dark Gray):#939393;
   padding: 0 15px;
 }
 
+.container .skillscontainer {
+  position: relative;
+  width: auto;
+  display: flex
+}
+
 .row {
   margin: 25px 0;
   /* 25px top and bottom, 0 left and right */
@@ -77,7 +83,24 @@ img {
 }
 
 .profileimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 50%;
+}
+
+.block1 {
+  float: left;
+  width: 50%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.block2 {
+  float: right;
+  width: 50%;
+  padding: 5px;
+  box-sizing: border-box;
 }
 
 a {
@@ -105,6 +128,10 @@ a:active {
 
 .logo {
   max-width: 150px;
+}
+
+.icon {
+  max-width: 50px
 }
 
 nav {
@@ -146,19 +173,22 @@ nav > ul > li > a:visited {
 
 .button {
   display: inline-block;
-  background-color: #939393;
-  color: #ffffff;
+  background-color: transparent;
+  color: #939393;
   font-weight: 400;
   padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #D6D2D1;
+  border: none;
+  text-align: center;
   /* width of the border, type, color */
   transition: 0.2s opacity;
+  cursor: pointer;
 }
 
-.button:hover {
-  opacity: 0.8%;
-  text-decoration: none;
+.button:hover,
+.button:focus {
+  background-color: #EDC97B;
+  color: #939393;
+  background-size: 100%;
 }
 
 .button:active {
@@ -166,12 +196,20 @@ nav > ul > li > a:visited {
 }
 
 .button.contact {
-  background colour: transparent;
-  color: #EDC97B;
+  background color: transparent;
+  color: #939393;
   text-transform: uppercase;
-  border: 2x solid #EDC97B;
+  border: none;
 }
 
-.button.contact {
-  background-color: #EDC97B color: #ffffff
+.button.contact:hover,
+.button.contact:focus {
+  background-color: #EDC97B;
+  color: #939393;
+}
+
+.button.contact:active {
+  background-color: #EDC97B;
+  color: #939393;
+  text-decoration: underline;
 }
