@@ -13,12 +13,6 @@ Tertiary Colour (Dark Gray):#939393;
   padding: 0 15px;
 }
 
-.container .skillscontainer {
-  position: relative;
-  width: auto;
-  display: flex
-}
-
 .row {
   margin: 25px 0;
   /* 25px top and bottom, 0 left and right */
@@ -48,6 +42,7 @@ header {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+  text-align: center;
 }
 
 #hero h1 {
