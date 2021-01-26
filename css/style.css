@@ -88,20 +88,6 @@ img {
   width: 50%;
 }
 
-.block1 {
-  float: left;
-  width: 50%;
-  padding: 5px;
-  box-sizing: border-box;
-}
-
-.block2 {
-  float: right;
-  width: 50%;
-  padding: 5px;
-  box-sizing: border-box;
-}
-
 a {
   colour: #939393;
   text-decoration: none;
