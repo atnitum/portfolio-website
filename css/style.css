@@ -13,9 +13,13 @@ Tertiary Colour (Dark Gray):#939393;
   padding: 0 15px;
 }
 
-.row {
+.row:after {
   margin: 25px 0;
   /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+  content: "";
+  clear: both;
+  display: table;
 }
 
 body {
@@ -207,4 +211,39 @@ nav > ul > li > a:visited {
   background-color: #EDC97B;
   color: #939393;
   text-decoration: underline;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+header {
+  text-align: unset;
+  padding: 20 0 13px;
+}
+
+nav {
+  width: auto;
+  float: right;
+  margin-top: 4px;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
 }
