@@ -97,7 +97,7 @@ img {
   animation: 4s color-change infinite alternate linear;
 }
 
-@@keyframes cloud-move {
+@keyframes cloud-move {
   from {transform: translate(0,50px);}
   to {transform: translate(200px,50px);}
 }
@@ -106,13 +106,13 @@ img {
   animation: 30s cloud-move infinite alternate linear;
 }
 
-@@keyframes cloud-move-reverse {
+@keyframes cloud-move-reverse {
   from {transform: translate(446px,48px);}
   to {transform: translate(100px, 48px);}
 }
 
 .cloud-back {
-  animation: 40s cloud-move-reverse infinite alternate linear;
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 a {
@@ -143,7 +143,7 @@ a:active {
 }
 
 .icon {
-  max-width: 50px
+  max-width: 43px;
 }
 
 nav {
@@ -177,6 +177,14 @@ nav > ul > li > a:active {
 
 nav > ul > li > a:visited {
   color: #5A5A5A;
+}
+
+#contact {
+  text-align: center;
+}
+
+#contact h2 {
+  text-align: center;
 }
 
 .clr{
