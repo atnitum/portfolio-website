@@ -166,7 +166,6 @@ nav > ul > li > a:visited {
   text-align: center;
   /* width of the border, type, color */
   transition: 0.2s opacity;
-  cursor: pointer;
 }
 
 .button:hover,
@@ -222,14 +221,30 @@ nav {
   padding: 10px;
 }
 
+#about-page h3 { margin-top: 0;}
+
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
 }
 
+.col-lg-7 {
+  width: 58.33%;
+}
+
+.col-lg-5 {
+ width: 41.66%;
+}
+
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
