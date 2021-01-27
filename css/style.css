@@ -112,7 +112,7 @@ img {
 }
 
 .cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
+  animation: 40s cloud-move-reverse infinite alternate linear;
 }
 
 a {
