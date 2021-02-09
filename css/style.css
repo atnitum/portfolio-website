@@ -250,6 +250,12 @@ header {
   text-align: unset;
 }
 
+nav {
+  width: auto;
+  float: right;
+  margin-top: 5px;
+}
+
 
 /* ==============================
 Large devices (1024px or larger)
