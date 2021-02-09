@@ -194,11 +194,6 @@ nav > ul > li > a {
   color: #fff;
 }
 
-nav > ul > li > a:hover,
-nav > ul > li > a:focus {
-  color: #EDC97B;
-}
-
 nav > ul > li > a:active {
   text decoration: underline;
 }
@@ -207,22 +202,10 @@ nav > ul > li > a:visited {
   color: #fff;
 }
 
-.navtoggle li .icon {
-  position: absolute;
-  right: 0;
-  top: 2px;
-  font-size: 20px;
-  padding-right: 0;
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
+  color: #EDC97B;
 }
-
-.navtoggle li:not(:last-child) {
-  display: none;
-}
-
-.navtoggle, .navtoggle.responsive {
-  position: relative;
-}
-
 
 /* ============================================================
 Animation Styling
