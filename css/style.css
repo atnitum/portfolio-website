@@ -1,10 +1,4 @@
-/*
-Colours used:
-Primary Colour Colour (Yellow):#EDC97B;
-Secondary Colour (Gray):#939393;
-Tertiary Colour (Dark Gray):#939393;
-*/
-/* Layout Styling */
+
 * {
   box-sizing: border-box;
 }
@@ -34,7 +28,7 @@ body {
 }
 
 header {
-  background-color: #FAF6F4;
+  background-color: #000;
   text-align: center;
   padding: 10px;
   box-shadow:  4px 4px 16px 0px rgba(50, 50, 50, 0.75);
@@ -42,7 +36,7 @@ header {
 }
 
 #hero {
-  background-color: #FAF6F4;
+  background-color: #fff;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -138,18 +132,15 @@ a:active {
   / color: #FFE3A5
 }
 
+
 .logo {
-  max-width: 150px;
+  max-width: 100px;
 }
 
 .icon {
   max-width: 43px;
 }
 
-nav {
-  display: inline-block;
-  width: 100%
-}
 
 nav > ul {
   list-style-type: none;
@@ -164,7 +155,7 @@ nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #939393;
+  color: #fffff;
 }
 nav > ul > li > a:hover,
 nav > ul > li > a:focus {
@@ -176,7 +167,23 @@ nav > ul > li > a:active {
 }
 
 nav > ul > li > a:visited {
-  color: #5A5A5A;
+  color: #fffff;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
 }
 
 #contact {
@@ -236,27 +243,13 @@ nav > ul > li > a:visited {
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
+@media only screen and (min-width: 640px) {
+}
+
 header {
   text-align: unset;
-  padding: 20 0 13px;
 }
 
-nav {
-  width: auto;
-  float: right;
-  margin-top: 4px;
-}
-
-.col-md-6 {
-  width: 50%;
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 10px;
-}
-
-#about-page h3 { margin-top: 0;}
 
 /* ==============================
 Large devices (1024px or larger)
@@ -264,22 +257,8 @@ Large devices (1024px or larger)
 @media only screen and (min-width: 1024px) {
 }
 
-.col-lg-7 {
-  width: 58.33%;
-}
-
-.col-lg-5 {
- width: 41.66%;
-}
-
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
-}
-
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
 }
