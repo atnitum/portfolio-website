@@ -3,19 +3,6 @@
   box-sizing: border-box;
 }
 
-.container {
-  padding: 0 15px;
-}
-
-.row:after {
-  margin: 25px 0;
-  /* 25px top and bottom, 0 left and right */
-  margin: 25px 0;
-  content: "";
-  clear: both;
-  display: table;
-}
-
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -49,6 +36,10 @@ header {
   text-align: center;
 }
 
+#hero span {
+  display: block;
+}
+
 h1, h2, h3 {
   line-height: 1.2
 }
@@ -75,38 +66,24 @@ img {
   width: 100%;
 }
 
+.container {
+  padding: 0 15px;
+}
+
+.row::after {
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .profileimg {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-}
-
-@keyframes color-change {
-  from {fill: #edc655;}
-  to {fill: #f76414;}
-}
-
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-
-@keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
-}
-
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
-}
-
-.cloud-back {
-  animation: 40s cloud-move-reverse infinite alternate linear;
 }
 
 a {
@@ -129,7 +106,7 @@ a:focus {
 
 a:active {
   /* selected link */
-  / color: #FFE3A5
+  / color: #FFE3A5;
 }
 
 
@@ -142,50 +119,6 @@ a:active {
 }
 
 
-nav > ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-nav > ul > li {
-  display: inline-block;
-}
-
-nav > ul > li > a {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #fffff;
-}
-nav > ul > li > a:hover,
-nav > ul > li > a:focus {
-  color: #EDC97B;
-}
-
-nav > ul > li > a:active {
-  text decoration: underline;
-}
-
-nav > ul > li > a:visited {
-  color: #fffff;
-}
-
-.navtoggle li .icon {
-  position: absolute;
-  right: 0;
-  top: 2px;
-  font-size: 20px;
-  padding-right: 0;
-}
-
-.navtoggle li:not(:last-child) {
-  display: none;
-}
-
-.navtoggle, .navtoggle.responsive {
-  position: relative;
-}
-
 #contact {
   text-align: center;
 }
@@ -194,9 +127,10 @@ nav > ul > li > a:visited {
   text-align: center;
 }
 
-.clr{
-  clear:both;
-}
+
+/* ============================================================
+Button Styling
+=============================================================== */
 
 .button {
   display: inline-block;
@@ -240,6 +174,88 @@ nav > ul > li > a:visited {
   text-decoration: underline;
 }
 
+/* ============================================================
+Nav Bar Styling
+=============================================================== */
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+}
+
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
+  color: #EDC97B;
+}
+
+nav > ul > li > a:active {
+  text decoration: underline;
+}
+
+nav > ul > li > a:visited {
+  color: #fff;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+
+/* ============================================================
+Animation Styling
+=============================================================== */
+
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 40s cloud-move-reverse infinite alternate linear;
+}
+
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -248,19 +264,42 @@ Medium devices (640px and larger)
 
 header {
   text-align: unset;
+  padding: 20px 0 13px;
 }
 
 nav {
   width: auto;
   float: right;
-  margin-top: 5px;
+  margin-top: 4px;
 }
 
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+
+.col-md-6 {
+  width: 50%;
+}
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col-lg-7 {
+  width: 58.33%;
+}
+
+.col-lg-5 {
+ width: 41.66%;
 }
 
 /* ==============================
