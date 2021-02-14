@@ -15,14 +15,20 @@
 <body>
   <header>
     <div class="container">
-      <a href="index.html"><img src="img/mmlogo1.svg" alt="MMlogo" class="logo">
-        <nav>
-          <ul>
-            <li><a href="index.html">Work</a></li>
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html"><img src="img/mmlogo1.svg" alt="MMlogo" class="logo">
+        </a>
+        <nav><a href="index.html">
+          </a>
+          <ul><a href="index.html">
+            </a>
+            <li><a href="index.html"></a><a href="index.html">Work</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
+      </div>
     </div>
   </header>
 

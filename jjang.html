@@ -5,24 +5,30 @@
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://kit.fontawesome.com/2a94255f26.js" crossorigin="anonymous"></script>
   <title>Mala Mutinta UI Design</title>
+  <script src="https://kit.fontawesome.com/2a94255f26.js" crossorigin="anonymous"></script>
   <link href="img/faviconlogo.ico" rel="shortcut icon">
 </head>
 
 <body>
   <header>
     <div class="container">
-      <a href="index.html"><img src="img/mmlogo1.svg" alt="MMlogo" class="logo">
-        <nav>
-          <ul>
-            <li><a href="index.html">Work</a></li>
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html"><img src="img/mmlogo1.svg" alt="MMlogo" class="logo">
+        </a>
+        <nav><a href="index.html">
+          </a>
+          <ul><a href="index.html">
+            </a>
+            <li><a href="index.html"></a><a href="index.html">Work</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
+      </div>
     </div>
   </header>
 
