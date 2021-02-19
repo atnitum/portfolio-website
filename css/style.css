@@ -1,23 +1,21 @@
-
 * {
   box-sizing: border-box;
 }
 
 body {
+  background-color: white;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  /* Sets the font size to 16px */
   font-weight: 300;
-  /* Sets the font weight to 300 */
   line-height: 1.2;
-  /* Sets the line-height to 1.2  * the font-size */
   color: #393939;
 }
+
 
 header {
   background-color: #000;
   padding: 10px 0 4px;
-  box-shadow:  4px 4px 16px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 4px 4px 16px rgba(50, 50, 50, 0.75);
   position: relative;
 }
 
@@ -31,7 +29,7 @@ header {
 
 #hero h1 {
   margin: 0;
-  padding: 0.67em
+  padding: 0.67em;
   text-align: center;
 }
 
@@ -39,13 +37,15 @@ header {
   display: block;
 }
 
-h1, h2, h3 {
-  line-height: 1.2
+h1,
+h2,
+h3 {
+  line-height: 1.2;
 }
 
 h1 {
-  font-size: 2.50em;
-  font-weight: 700
+  font-size: 2.5em;
+  font-weight: 700;
 }
 
 h2 {
@@ -54,11 +54,13 @@ h2 {
 }
 
 h3 {
-  font-size: 1.50em font-weight: 400;
+  font-size: 1.5em;
+  font-weight: 400;
 }
 
 h4 {
-  font-size: 1em font-weight: 400;
+  font-size: 1em;
+  font-weight: 400;
 }
 
 img {
@@ -70,8 +72,6 @@ img {
 }
 
 .row::after {
-  margin: 25px 0;
-  /* 25px top and bottom, 0 left and right */
   margin: 25px 0;
   content: "";
   clear: both;
@@ -86,28 +86,25 @@ img {
 }
 
 a {
-  colour: #939393;
+  color: #939393;
   text-decoration: none;
-  /* No underlining */
 }
 
 a:visited {
   /* visted link */
-  color: #5A5A5A
+  color: #5a5a5a;
 }
 
 a:hover,
 a:focus {
-  color: #EDC97B;
+  color: #edc97b;
   text-decoration: underline;
-  /* Underlining when hovering over a link */
 }
 
 a:active {
   /* selected link */
-  / color: #FFE3A5;
+  color: #ffe3a5;
 }
-
 
 .logo {
   max-width: 100px;
@@ -117,7 +114,6 @@ a:active {
   max-width: 43px;
 }
 
-
 #contact {
   text-align: center;
 }
@@ -126,11 +122,9 @@ a:active {
   text-align: center;
 }
 
-
 /* ============================================================
 Button Styling
 =============================================================== */
-
 .button {
   display: inline-block;
   background-color: transparent;
@@ -139,13 +133,12 @@ Button Styling
   padding: 10px;
   border: none;
   text-align: center;
-  /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
 .button:hover,
 .button:focus {
-  background-color: #EDC97B;
+  background-color: #edc97b;
   color: #939393;
   background-size: 100%;
 }
@@ -155,7 +148,6 @@ Button Styling
 }
 
 .button.contact {
-  background color: transparent;
   color: #939393;
   text-transform: uppercase;
   border: none;
@@ -163,12 +155,12 @@ Button Styling
 
 .button.contact:hover,
 .button.contact:focus {
-  background-color: #EDC97B;
+  background-color: #edc97b;
   color: #939393;
 }
 
 .button.contact:active {
-  background-color: #EDC97B;
+  background-color: #edc97b;
   color: #939393;
   text-decoration: underline;
 }
@@ -176,7 +168,6 @@ Button Styling
 /* ============================================================
 Nav Bar Styling
 =============================================================== */
-
 nav > ul {
   list-style-type: none;
   padding: 0;
@@ -190,9 +181,8 @@ nav > ul > li > a {
   color: #fff;
 }
 
-
 nav > ul > li > a:active {
-  text decoration: underline;
+  text-decoration: underline;
 }
 
 nav > ul > li > a:visited {
@@ -201,7 +191,7 @@ nav > ul > li > a:visited {
 
 nav > ul > li > a:hover,
 nav > ul > li > a:focus {
-  color: #EDC97B;
+  color: #edc97b;
 }
 
 .navtoggle li:not(:last-child) {
@@ -225,23 +215,27 @@ nav > ul > li > a:focus {
   padding: 24px 0 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid #4A4A4A;
+  border-top: 1px solid #4a4a4a;
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
 /* ============================================================
 Animation Styling
 =============================================================== */
-
 @keyframes color-change {
-  from {fill: #edc655;}
-  to {fill: #f76414;}
+  from {
+    fill: #edc655;
+  }
+
+  to {
+    fill: #f76414;
+  }
 }
 
 .sun {
@@ -249,8 +243,13 @@ Animation Styling
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 .cloud-front {
@@ -258,78 +257,80 @@ Animation Styling
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 .cloud-back {
   animation: 40s cloud-move-reverse infinite alternate linear;
 }
 
-
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-
-.navtoggle li:not(:last-child) {
+  .navtoggle li:not(:last-child) {
     display: inline-block;
   }
 
-.navtoggle li:last-child {
+  .navtoggle li:last-child {
     display: none;
   }
 
-
-nav > ul {
+  nav > ul {
     margin: 1em 0;
   }
 
-nav > ul > li {
+  nav > ul > li {
     display: inline-block;
   }
 
-header {
-  text-align: unset;
-  padding: 20px 0 13px;
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
 }
 
-nav {
-  width: auto;
-  float: right;
-  margin-top: 4px;
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 10px;
-}
-
-.col-md-6 {
-  width: 50%;
-}
-}
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
 }
 
-.col-lg-7 {
-  width: 58.33%;
-}
-
-.col-lg-5 {
- width: 41.66%;
-}
-}
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-}
+@media only screen and (min-width: 1440px)
