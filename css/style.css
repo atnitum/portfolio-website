@@ -11,7 +11,6 @@ body {
   color: #393939;
 }
 
-
 header {
   background-color: #000;
   padding: 10px 0 4px;
@@ -128,7 +127,7 @@ Button Styling
 .button {
   display: inline-block;
   background-color: transparent;
-  color: #939393;
+  color: #393939;
   font-weight: 400;
   padding: 10px;
   border: none;
@@ -144,11 +143,11 @@ Button Styling
 }
 
 .button:active {
-  color: #939393;
+  color: #393939;
 }
 
 .button.contact {
-  color: #939393;
+  color: #393939;
   text-transform: uppercase;
   border: none;
 }
@@ -156,12 +155,12 @@ Button Styling
 .button.contact:hover,
 .button.contact:focus {
   background-color: #edc97b;
-  color: #939393;
+  color: #393939;
 }
 
 .button.contact:active {
   background-color: #edc97b;
-  color: #939393;
+  color: #393939;
   text-decoration: underline;
 }
 

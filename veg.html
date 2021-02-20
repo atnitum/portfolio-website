@@ -5,24 +5,76 @@
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Veg Ahead UI Project</title>
+  <title>Mala Mutinta UI Design</title>
+  <script src="https://kit.fontawesome.com/2a94255f26.js" crossorigin="anonymous"></script>
   <link href="img/faviconlogo.ico" rel="shortcut icon">
 </head>
 
 <header>
   <div class="container">
-    <a href="index.html"><img src="img/logomm.svg" alt="MMlogo" class="logo">
-    <nav>
-      <ul>
-        <li><a href="index.html">Work</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="navtoggle" id="myNavtoggle">
+      <a href="index.html"><img src="img/mmlogo1.svg" alt="MMlogo" class="logo">
+      </a>
+      <nav><a href="index.html">
+        </a>
+        <a href="index.html">
+        </a>
+        <ul>
+          <li><a href="index.html"></a><a href="index.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="files/mala_mutinta_CV1.pdf" target="_blank">CV</a></li>
+          <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+        </ul>
+      </nav>
+    </div>
   </div>
 </header>
+
+<main>
+  <div class="container">
+    <div>
+      <div>
+        <h1>Veg Ahead</h1>
+      </div>
+    </div>
+    <div id="project">
+      <div>
+        <div id="context">
+          <picture>
+            <source srcset="img/veg/1x/vegaheadtitle@1x.png" media="(max-width:767px)">
+            <img src="img/veg/2x/vegaheadtitle@2x.png" alt="Veg Ahead Mockup">
+          </picture>
+          <p><strong>What</strong> is it? A web application with a variety of simple, easy and decadent plant-based meals</p>
+          <p><strong>Who</strong> is it for? Anyone who is looking for plant-based meals to create. It’s not solely limited to vegans or vegetarians</p>
+          <p><strong>Where</strong> is it used? At the user’s home, in their kitchen, or when they are food shopping</p>
+          <p><strong>Why</strong> is it necessary? People who want to try cooking vegan meals may feel overwhelmed with the options already on the market or may not know where to start.
+            A recipe web app like this will give them the chance to narrow down their searches for easy recipes that truly appeal to them.</p>
+        </div>
+        <div id="role">
+          <h2>My Role</h2>
+          <p>This project was also completed for my Career Foundry Course. I designed the entirety of the project from scratch, working through the entire UI and UX process. I conducted user research, usability tests, and prototyped the finalised
+            screens.</p>
+        </div>
+        <div id="process">
+          <h2>Process</h2>
+          <picture>
+            <source srcset="img/veg/1x/research@1x.jpg" media="(max-width:767px)">
+            <img src="img/veg/2x/research@2x.jpg" alt="Veg Ahead Research">
+          </picture>
+          <picture>
+            <source srcset="img/veg/1x/responsivepage@1x.jpg" media="(max-width:767px)">
+            <img src="img/veg/2x/responsivepage@2x.jpg" alt="Veg Ahead Research">
+          </picture>
+          <picture>
+            <source srcset="img/veg/1x/finalmockups@1x.jpg" media="(max-width:767px)">
+            <img src="img/veg/2x/finalmockups@2x.jpg" alt="Veg Ahead Research">
+          </picture>
+        </div>
+      </div>
+</main>
 
 <footer id="contact">
   <div class="container">
